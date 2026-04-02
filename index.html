@@ -24,7 +24,7 @@
       <a href="#features">Features</a>
       <a href="#tools">Tools</a>
       <a href="#install">Install</a>
-      <a href="https://github.com/user/alien-mcp" class="btn-nav" target="_blank">GitHub</a>
+      <a href="https://github.com/YasserLoukniti/AlienMcp" class="btn-nav" target="_blank">GitHub</a>
     </div>
   </div>
 </nav>
@@ -37,7 +37,7 @@
     <p class="hero-sub">Connect Claude Code, Cursor, or any MCP client to your <strong>real Chrome tabs</strong>.<br>Your sessions. Your cookies. Your extensions. 19 tools. Zero headless browsers.</p>
     <div class="hero-actions">
       <a href="#install" class="btn btn-primary">Get Started</a>
-      <a href="https://github.com/user/alien-mcp" class="btn btn-secondary" target="_blank">View on GitHub</a>
+      <a href="https://github.com/YasserLoukniti/AlienMcp" class="btn btn-secondary" target="_blank">View on GitHub</a>
     </div>
     <div class="hero-terminal">
       <div class="terminal-bar">
@@ -45,14 +45,13 @@
         <span class="terminal-title">Claude Code</span>
       </div>
       <div class="terminal-body">
-        <span class="t-prompt">&gt;</span> Take a screenshot and find all buttons on the page<br><br>
-        <span class="t-tool">alien_screenshot</span> <span class="t-dim">captured 1920x1080</span><br>
-        <span class="t-tool">alien_find_element</span> <span class="t-dim">selector: "button"</span><br>
-        <span class="t-result">Found 4 elements:</span><br>
-        <span class="t-dim">[0] &lt;button&gt; "Sign In" (120,340 80x36)</span><br>
-        <span class="t-dim">[1] &lt;button&gt; "Get Started" (400,340 120x36)</span><br>
-        <span class="t-dim">[2] &lt;button&gt; "Learn More" (680,520 100x36)</span><br>
-        <span class="t-dim">[3] &lt;button&gt; "Subscribe" (400,800 140x40)</span>
+        <span class="t-prompt">&gt;</span> Navigate to alien-mcp.com and find all links<br><br>
+        <span class="t-tool">alien_navigate</span> <span class="t-dim">url: "https://www.alien-mcp.com"</span><br>
+        <span class="t-result">Navigated to: https://www.alien-mcp.com</span><br>
+        <span class="t-tool">alien_find_element</span> <span class="t-dim">selector: "a.btn"</span><br>
+        <span class="t-result">Found 2 elements:</span><br>
+        <span class="t-dim">[0] &lt;a&gt; "Get Started" (480,340 120x40)</span><br>
+        <span class="t-dim">[1] &lt;a&gt; "View on GitHub" (620,340 140x40)</span>
       </div>
     </div>
   </div>
@@ -217,7 +216,7 @@
         <div class="step-content">
           <h3>Install the Chrome Extension</h3>
           <div class="code-block">
-            <code>git clone https://github.com/user/alien-mcp.git<br>cd alien-mcp/packages/chrome-extension<br>npm install && npm run build</code>
+            <code>git clone https://github.com/YasserLoukniti/AlienMcp.git<br>cd AlienMcp/packages/chrome-extension<br>npm install && npm run build</code>
           </div>
           <p>Then load <code>dist/</code> folder in <code>chrome://extensions</code> (Developer Mode)</p>
         </div>
@@ -258,11 +257,17 @@
       <span>AlienMcp</span>
     </div>
     <div class="footer-links">
-      <a href="https://github.com/user/alien-mcp" target="_blank">GitHub</a>
+      <a href="https://github.com/YasserLoukniti/AlienMcp" target="_blank">GitHub</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="https://modelcontextprotocol.io" target="_blank">MCP Protocol</a>
     </div>
-    <div class="footer-right">MIT License &copy; 2026</div>
+    <div class="footer-right">
+      <a href="https://github.com/YasserLoukniti" target="_blank" class="footer-social">GitHub</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.linkedin.com/in/yasser-loukniti/" target="_blank" class="footer-social">LinkedIn</a>
+      <span class="footer-sep">·</span>
+      <span>MIT &copy; 2026 Yasser Loukniti</span>
+    </div>
   </div>
 </footer>
 
