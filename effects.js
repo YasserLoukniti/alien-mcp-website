@@ -206,6 +206,20 @@ function typeTerminal(el, html) {
       return;
     }
 
+    // Handle HTML entities (&lt; &gt; &amp; etc.) as single unit
+    if (html[i] === '&') {
+      let entity = '';
+      while (i < html.length && html[i] !== ';') {
+        entity += html[i];
+        i++;
+      }
+      entity += ';'; // include the semicolon
+      i++;
+      el.innerHTML += entity;
+      setTimeout(tick, speed);
+      return;
+    }
+
     el.innerHTML += html[i];
     i++;
     setTimeout(tick, speed);
