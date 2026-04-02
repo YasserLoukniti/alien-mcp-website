@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AlienMcp</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .privacy { padding: 120px 0 80px; max-width: 700px; margin: 0 auto; }
+    .privacy h1 { font-size: 36px; text-align: left; margin-bottom: 8px; }
+    .privacy .date { color: var(--text-muted); font-size: 14px; margin-bottom: 40px; }
+    .privacy h2 { font-size: 22px; text-align: left; margin: 32px 0 12px; }
+    .privacy p, .privacy li { font-size: 15px; color: var(--text-dim); line-height: 1.8; margin-bottom: 12px; }
+    .privacy ul { padding-left: 20px; }
+    .privacy strong { color: var(--text); }
+    .privacy table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .privacy th, .privacy td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--purple); font-size: 14px; }
+    .privacy th { color: var(--text); font-weight: 600; }
+    .privacy td { color: var(--text-dim); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="icon.png" alt="AlienMcp" class="nav-icon">
+      <span>AlienMcp</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</nav>
+
+<div class="privacy container">
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: April 2, 2026</p>
+
+  <h2>Overview</h2>
+  <p>AlienMcp is a browser automation Chrome extension that connects AI agents to your browser via the Model Context Protocol (MCP).</p>
+
+  <h2>Data Collection</h2>
+  <p><strong>AlienMcp does not collect, transmit, or store any personal data.</strong></p>
+  <p>All communication happens locally between the Chrome extension and a local MCP server on your machine (localhost:7888). No data is sent to external servers.</p>
+
+  <h2>What the Extension Accesses</h2>
+  <p>When you explicitly use AlienMcp tools, the extension may access:</p>
+  <ul>
+    <li><strong>Tab information</strong> (URLs, titles) - for tool commands and popup display</li>
+    <li><strong>Page content</strong> (DOM, text) - when using read, find, or modify tools</li>
+    <li><strong>Screenshots</strong> - when using the screenshot tool</li>
+    <li><strong>Cookies and storage</strong> - when using cookies or storage tools</li>
+    <li><strong>Network requests</strong> - when network monitoring is enabled</li>
+    <li><strong>Console messages</strong> - when console capture is enabled</li>
+  </ul>
+  <p>All data stays on your machine and is only accessible to the MCP client you use locally.</p>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Purpose</th></tr>
+    <tr><td>tabs</td><td>List and manage browser tabs</td></tr>
+    <tr><td>activeTab</td><td>Access the current active tab</td></tr>
+    <tr><td>scripting</td><td>Execute scripts for DOM interaction</td></tr>
+    <tr><td>debugger</td><td>Chrome DevTools Protocol for screenshots, JS execution, keyboard input</td></tr>
+    <tr><td>webRequest</td><td>Monitor network requests</td></tr>
+    <tr><td>cookies</td><td>Read and manage cookies</td></tr>
+    <tr><td>storage</td><td>Extension internal storage</td></tr>
+    <tr><td>offscreen</td><td>Keep WebSocket connection alive</td></tr>
+    <tr><td>alarms</td><td>Periodic keepalive for service worker</td></tr>
+    <tr><td>tabGroups</td><td>Manage tab groups for scoping</td></tr>
+    <tr><td>&lt;all_urls&gt;</td><td>Operate on any webpage</td></tr>
+  </table>
+
+  <h2>Data Retention</h2>
+  <p>No data is persisted. Captured data (network requests, console messages) is held in memory only and cleared on extension reload or Chrome restart.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>AlienMcp does not integrate with any analytics, tracking, or data collection services.</p>
+
+  <h2>Contact</h2>
+  <p>For questions, please open an issue on the <a href="https://github.com/user/alien-mcp" style="color: var(--green);">GitHub repository</a>.</p>
+</div>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="icon.png" alt="" class="footer-icon">
+      <span>AlienMcp</span>
+    </div>
+    <div class="footer-right">MIT License &copy; 2026</div>
+  </div>
+</footer>
+
+</body>
+</html>

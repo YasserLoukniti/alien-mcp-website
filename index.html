@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlienMcp - Browser Automation for AI Agents</title>
+  <meta name="description" content="Connect AI agents to your real browser. 19 MCP tools: screenshot, navigate, click, type, read pages, watch network, and more.">
+  <meta property="og:title" content="AlienMcp - Browser Automation for AI Agents">
+  <meta property="og:description" content="Control your real Chrome tabs with AI via the Model Context Protocol. 19 tools, tab groups, trusted events.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og-image.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="icon.png" alt="AlienMcp" class="nav-icon">
+      <span>AlienMcp</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#tools">Tools</a>
+      <a href="#install">Install</a>
+      <a href="https://github.com/user/alien-mcp" class="btn-nav" target="_blank">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <img src="icon.png" alt="AlienMcp" class="hero-logo">
+    <h1>Browser Automation<br><span class="gradient-text">for AI Agents</span></h1>
+    <p class="hero-sub">Connect Claude Code, Cursor, or any MCP client to your <strong>real Chrome tabs</strong>.<br>Your sessions. Your cookies. Your extensions. 19 tools. Zero headless browsers.</p>
+    <div class="hero-actions">
+      <a href="#install" class="btn btn-primary">Get Started</a>
+      <a href="https://github.com/user/alien-mcp" class="btn btn-secondary" target="_blank">View on GitHub</a>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">Claude Code</span>
+      </div>
+      <div class="terminal-body">
+        <span class="t-prompt">&gt;</span> Take a screenshot and find all buttons on the page<br><br>
+        <span class="t-tool">alien_screenshot</span> <span class="t-dim">captured 1920x1080</span><br>
+        <span class="t-tool">alien_find_element</span> <span class="t-dim">selector: "button"</span><br>
+        <span class="t-result">Found 4 elements:</span><br>
+        <span class="t-dim">[0] &lt;button&gt; "Sign In" (120,340 80x36)</span><br>
+        <span class="t-dim">[1] &lt;button&gt; "Get Started" (400,340 120x36)</span><br>
+        <span class="t-dim">[2] &lt;button&gt; "Learn More" (680,520 100x36)</span><br>
+        <span class="t-dim">[3] &lt;button&gt; "Subscribe" (400,800 140x40)</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="features" class="features">
+  <div class="container">
+    <h2>Why AlienMcp?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>Your Real Browser</h3>
+        <p>Not a headless instance. AI controls your actual Chrome tabs with your logged-in sessions, cookies, and extensions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Tab Group Scoping</h3>
+        <p>Choose which tabs the AI can see. Only tabs in the AlienMcp group are accessible. Full control over what's shared.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Trusted Events</h3>
+        <p>Click, type, and hover via Chrome DevTools Protocol. Works on sites that reject synthetic JavaScript events.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔌</div>
+        <h3>MCP Standard</h3>
+        <p>Works with any MCP client: Claude Code, Cursor, VS Code, or your own tools. One protocol, universal access.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>100% Local</h3>
+        <p>All communication stays on localhost. No data sent to external servers. No analytics. No tracking. Period.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛠️</div>
+        <h3>19 Tools</h3>
+        <p>Screenshot, navigate, click, type, scroll, hover, wait, read DOM, execute JS, fill forms, cookies, storage, PDF, and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tools" class="tools">
+  <div class="container">
+    <h2>Complete Toolkit</h2>
+    <p class="section-sub">Everything you need to automate any browser workflow.</p>
+    <div class="tools-grid">
+      <div class="tool-item">
+        <span class="tool-name">alien_context</span>
+        <span class="tool-desc">Active tab info &amp; group overview</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_tabs</span>
+        <span class="tool-desc">List, create, close, activate tabs</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_screenshot</span>
+        <span class="tool-desc">Viewport or full-page capture</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_navigate</span>
+        <span class="tool-desc">Navigate to any URL</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_click</span>
+        <span class="tool-desc">Click by selector or coordinates</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_type</span>
+        <span class="tool-desc">Trusted keyboard input via CDP</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_hover</span>
+        <span class="tool-desc">Hover for tooltips &amp; dropdowns</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_scroll</span>
+        <span class="tool-desc">Scroll by direction or to element</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_wait</span>
+        <span class="tool-desc">Wait for elements to appear</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_execute_js</span>
+        <span class="tool-desc">Run JS via CDP (bypasses CSP)</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_read_page</span>
+        <span class="tool-desc">Read HTML, text, or selection</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_modify_dom</span>
+        <span class="tool-desc">Edit attributes, text, styles</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_find_element</span>
+        <span class="tool-desc">Find by selector, text, XPath, role</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_form_input</span>
+        <span class="tool-desc">Fill forms (React/Vue compatible)</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_network</span>
+        <span class="tool-desc">Monitor network requests</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_console</span>
+        <span class="tool-desc">Capture console messages</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_cookies</span>
+        <span class="tool-desc">Read, set, delete cookies</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_storage</span>
+        <span class="tool-desc">localStorage &amp; sessionStorage</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-name">alien_pdf</span>
+        <span class="tool-desc">Generate page PDF</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="architecture">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="arch-flow">
+      <div class="arch-box">
+        <div class="arch-label">AI Agent</div>
+        <div class="arch-detail">Claude Code, Cursor, etc.</div>
+      </div>
+      <div class="arch-arrow">→ stdio</div>
+      <div class="arch-box">
+        <div class="arch-label">MCP Server</div>
+        <div class="arch-detail">Node.js, port 7888</div>
+      </div>
+      <div class="arch-arrow">→ WebSocket</div>
+      <div class="arch-box">
+        <div class="arch-label">Chrome Extension</div>
+        <div class="arch-detail">Manifest V3</div>
+      </div>
+      <div class="arch-arrow">→ CDP</div>
+      <div class="arch-box highlight">
+        <div class="arch-label">Your Browser</div>
+        <div class="arch-detail">Real tabs, real sessions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="install" class="install">
+  <div class="container">
+    <h2>Get Started in 2 Minutes</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Install the Chrome Extension</h3>
+          <div class="code-block">
+            <code>git clone https://github.com/user/alien-mcp.git<br>cd alien-mcp/packages/chrome-extension<br>npm install && npm run build</code>
+          </div>
+          <p>Then load <code>dist/</code> folder in <code>chrome://extensions</code> (Developer Mode)</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>Build the MCP Server</h3>
+          <div class="code-block">
+            <code>cd alien-mcp/packages/mcp-server<br>npm install && npm run build</code>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Register with Claude Code</h3>
+          <div class="code-block">
+            <code>claude mcp add alienMcp --transport stdio -s user \<br>&nbsp;&nbsp;-- node /path/to/alien-mcp/packages/mcp-server/dist/index.js</code>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>Add Tabs &amp; Go</h3>
+          <p>Click the 👽 extension icon, add tabs to the AlienMcp group, and start asking your AI to interact with them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="icon.png" alt="" class="footer-icon">
+      <span>AlienMcp</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/user/alien-mcp" target="_blank">GitHub</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://modelcontextprotocol.io" target="_blank">MCP Protocol</a>
+    </div>
+    <div class="footer-right">MIT License &copy; 2026</div>
+  </div>
+</footer>
+
+<canvas id="stars"></canvas>
+<script src="effects.js"></script>
+</body>
+</html>
